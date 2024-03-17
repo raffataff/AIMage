@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMage - Stereoscape</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+</head>
+<body>
+    <div class="container">
+        <div class="container-inner">
+            <h1>AIMage Stereoscape</h1>
+            <div class="controls">
+                <input type="file" id="audioFileInput" accept="audio/*">
+               
+                <button id="analyzeButton" disabled>Analyze Audio</button>
+                <button id="pauseButton" disabled>Pause</button>
+                <button id="stopButton" disabled>Stop</button>
+                <button id="clearButton" disabled>Clear</button>
+            </div>
+        </div>
+        <!-- Visualizer canvas -->
+        <div class="canvas-container">
+            <canvas id="leftChannelCanvas"></canvas>
+            <canvas id="rightChannelCanvas"></canvas>
+        </div>
+        <!-- Analysis Area -->
+        <div class="analysis-container">
+            <div id="audioDurationDisplay"></div>
+            <div id="pauseIndicator" style="display: none;">Audio Paused</div>
+            <div id="frequencyThresholdDisplay"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

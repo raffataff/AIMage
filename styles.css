@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: flex-start;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 90%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.container-inner  {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    }
+   
+h1 {
+    padding: 5px;
+    background: linear-gradient(to right, red, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start; /* Change flex-start to space-between */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#dropzone {
+   /* display: flex; /* Add this line */
+   /* justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+    text-align: center;
+     padding-bottom: 8px;
+   /* border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;*/
+}
+
+button, input[type="file"], select, input[type="range"] {
+    background-color: #00000079;
+    color: #5a5a5a;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+   /* padding: 8px 16px; */
+
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#begin {
+    color: aqua;
+}
+
+button:hover, input[type="file"]:hover, select:hover, input[type="range"]:hover {
+    background-color: #06cc0f;
+     color: #ffffff;
+}
+
+button:disabled, input[type="range"]:disabled {
+    background-color: #000000;
+    cursor: not-allowed;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    /*border-radius: 5px;*/
+}
+
+#visualizationCanvas {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: -ms-inline-grid;
+}
+
+#leftChannelCanvas,
+#rightChannelCanvas {
+    width: 90%;
+    height: auto;
+    border: 1px solid #04cdff00;
+    
+}
+
+.analysis-container {
+    color: #06cc0f;
+    background-color: #1d1d1d;
+    border: #5a5a5a;
+    border-width: 1px;
+}
